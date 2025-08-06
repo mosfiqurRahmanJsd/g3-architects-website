@@ -1,9 +1,100 @@
 /* google fonts cdn */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* universal style */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* shared styles */
 .work-sans-font {
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.display-flex {
+    display: flex;
+}
+
+.text-dark {
+    color: rgb(19, 19, 19);
+}
+
+.text-gray {
+    color: rgb(66, 66, 66);
+}
+
+.text-lightgray {
+    color: rgb(114, 114, 114);
+}
+
+.bg-light {
+    background-color: rgba(255, 144, 14, 0.1);
+    ;
+}
+
+
+
+
+
+
+/* header styles */
+
+
+/* navbar related styles */
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    list-style: none;
+    margin: 0 18px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.brand {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.navbar,
+.banner {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.navbar-icon {
+    height: 35px;
+    width: 35px;
+    display: none;
+}
+
+
+
+
+/* responsive web design */
+
+
+
+/* medium device */
+@media only screen and (max-width: 768px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .navbar-icon {
+        display: block;
+    }
 }
