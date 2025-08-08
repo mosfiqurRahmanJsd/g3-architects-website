@@ -47,6 +47,15 @@
     border: 0;
 }
 
+img {
+    width: 100%;
+}
+
+.fixed-width {
+    width: 90%;
+    margin: 0 auto;
+}
+
 
 
 
@@ -81,11 +90,7 @@ header {
     font-weight: 700;
 }
 
-.navbar,
-.banner {
-    max-width: 90%;
-    margin: 0 auto;
-}
+
 
 .navbar-icon {
     height: 35px;
@@ -97,9 +102,6 @@ header {
 
 
 /* banner styles */
-.banner img {
-    width: 100%;
-}
 
 .banner {
     margin-top: 100px;
@@ -131,7 +133,6 @@ header {
 
 /* features styles */
 .features {
-    width: 90%;
     margin: 0 auto;
     gap: 73px;
     align-items: center;
@@ -144,6 +145,7 @@ header {
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 }
+
 .features-box {
     width: 50%;
     padding-right: 61px;
@@ -176,6 +178,90 @@ header {
 
 
 
+
+/* design features styles */
+.design-title {
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    padding-left: 21px;
+    border-left: 5px solid rgba(255, 144, 14, 1);
+    ;
+}
+
+.design-box p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.box {
+    width: 50%;
+}
+
+.box h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.design-box {
+    gap: 92px;
+}
+
+.left-box {
+    margin-right: 54px;
+}
+
+.blog {
+    margin-bottom: 20px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    background: rgba(255, 255, 255, 1);
+}
+
+.blog-1 {
+    margin-top: 30px;
+}
+
+.experience-box {
+    border-radius: 8px;
+    background: rgba(255, 144, 14, 1);
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 45px;
+    position: absolute;
+    bottom: 0;
+    left: -92px;
+}
+
+.experience-box h2 {
+    font-size: 65px;
+    font-weight: 600;
+    line-height: 70px;
+}
+
+.experience-box p {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+
+.box-2 {
+    position: relative;
+}
+
+.design-features {
+    margin-bottom: 130px;
+}
 
 
 
@@ -212,9 +298,24 @@ header {
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
     }
+
     .features-box {
         width: 90%;
         padding-right: 0;
         text-align: center;
+    }
+
+    .design-box {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .box {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .experience-box {
+        display: none;
     }
 }
