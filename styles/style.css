@@ -351,6 +351,21 @@ header {
 }
 
 
+/* footer styles */
+footer {
+    border-radius: 8px;
+    background-color: rgba(255, 244, 231, 1);
+    padding: 38px 0;
+    text-align: center;
+}
+
+small {
+    font-size: 20px ;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+
 
 
 
